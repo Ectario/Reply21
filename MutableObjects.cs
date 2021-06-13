@@ -71,13 +71,16 @@ namespace Reply21
 
     public class Building
     {
-        public Building(int x, int y, int latencyWeight, int connectionSpeedWeight)
+        public Building(int id, int x, int y, int latencyWeight, int connectionSpeedWeight)
         {
+            this.id = id;
             this.x = x;
             this.y = y;
             this.latencyWeight = latencyWeight;
             this.connectionSpeedWeight = connectionSpeedWeight;
         }
+
+        public int id { get; set; }
 
         public int x { get; set; }
         public int y { get; set; }
