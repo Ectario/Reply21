@@ -6,7 +6,7 @@ namespace Reply21
     {
         public Grid GetGrid(string pathToInputFile)
         {
-            Grid grid = new Grid(4, 5, 10);
+            Grid grid = new Grid(4, 5, 10, "testFile");
             grid.lstAntenna.Add(new Antenna(0, 5, 2));
             return grid;
         }
