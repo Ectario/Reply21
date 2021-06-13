@@ -5,11 +5,12 @@ namespace Reply21
 {
     public class Grid
     {
-        public Grid(int width, int height, int reward)
+        public Grid(int width, int height, int reward, string file)
         {
             this.width = width;
             this.height = height;
             this.reward = reward;
+            this.file = file;
             lstBuildings = new List<Building>();
             lstAntenna = new List<Antenna>();
             lstCells = new List<Cell>();
@@ -24,6 +25,8 @@ namespace Reply21
         public List<Antenna> lstAntenna { get; set; }
 
         public List<Cell> lstCells { get; set; }
+       
+        public string file { get; set; }
     }
 
     public class Cell
