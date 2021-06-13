@@ -19,7 +19,7 @@ namespace Reply21
             int nAntennas = int.Parse(lines[1].Split(' ')[1]);
             int reward = int.Parse(lines[1].Split(' ')[2]);
 
-            Grid grid = new Grid(width, height, reward, pathToInputFile.Split('/')[2]);
+            Grid grid = new Grid(width, height, reward, pathToInputFile.Split('/')[2].Split('.')[0]);
 
             // Extract buildings
             for (int i = 0; i < nBuildings; i++)
