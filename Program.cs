@@ -22,6 +22,7 @@ namespace Reply21
                     antenna.y = building.y;
                 }
                 else break;
+                cptBuilding++;
             }
 
             string pathOutput = output.generateOutput(grid);

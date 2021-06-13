@@ -23,7 +23,7 @@ namespace Reply21
             // Create a file to write to.
             using (StreamWriter sw = File.CreateText(path))
             {
-                sw.WriteLine(outputText);
+                sw.Write(outputText);
             }
 
             return path;
