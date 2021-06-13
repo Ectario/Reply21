@@ -10,7 +10,7 @@ namespace Reply21
             Input input = new Input();
             Output output = new Output();
 
-            Grid grid = input.GetGrid("./scenario/a_example.in");
+            Grid grid = input.GetGrid("./scenarios/a_example.in");
 
             int cptBuilding = 0;
             foreach (Building building in grid.lstBuildings)
